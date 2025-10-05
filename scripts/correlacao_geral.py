@@ -1,3 +1,7 @@
+# Análise de Corelação em Pares - Heatmap e Estatísticas de correlação forte e moderada
+# Autor: Gabriel Laureano
+# Data: 05/10/2025
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt

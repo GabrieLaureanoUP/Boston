@@ -1,3 +1,7 @@
+# Analise de Concentração e Distribuição das colunas numéricas
+# Autor: Gabriel Laureano
+# Data: 05/10/2025
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -36,6 +40,9 @@ for coluna in colunas_numericas:
     print(f"  Máximo: {maximo:.4f}")
     print(f"  Quartis:")
     print(df[coluna].quantile([0.25, 0.5, 0.75]))
+    # Teste de normalidade Shapiro-Wilk
+    _, shapiro_p = stats.shapiro(df[coluna].dropna())
+    print(f"  Shapiro-Wilk p-valor: {shapiro_p:.6f}")
     print()
 
 num_cols = len(colunas_numericas)

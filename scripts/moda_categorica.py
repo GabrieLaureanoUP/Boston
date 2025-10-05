@@ -1,3 +1,7 @@
+# Análise da Moda das colunas categoricas - Housing Dataset
+# Autor: Gabriel Laureano
+# Data: 05/10/2025
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -42,7 +46,6 @@ sns.boxplot(x='CHAS', y='MEDV', data=df)
 plt.title('Valor médio dos imóveis (MEDV) por proximidade ao rio Charles')
 plt.show()
 
-# Interpretação automática
 print("\nInterpretação:")
 print(f"A variável CHAS é categórica e indica a proximidade ao rio Charles.")
 print(f"A moda da variável é {moda_chas} (não próxima ao rio) e representa {proporcao_chas[moda_chas]*100:.1f}% das observações.")
