@@ -34,12 +34,6 @@ sns.countplot(x='CHAS', data=df)
 plt.title('Distribuição da variável CHAS')
 plt.show()
 
-plt.figure(figsize=(6,6))
-df['CHAS'].value_counts().plot.pie(autopct='%1.1f%%', colors=['skyblue', 'orange'])
-plt.title('Proporção de casas próximas ao rio Charles')
-plt.ylabel('')
-plt.show()
-
 # 4. Relacionar CHAS com MEDV
 plt.figure(figsize=(7,5))
 sns.boxplot(x='CHAS', y='MEDV', data=df)
